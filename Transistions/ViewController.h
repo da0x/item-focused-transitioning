@@ -11,7 +11,4 @@
 
 @interface ViewController : UIViewController<ItemFocusedTransitionProtocol>
 
--(IBAction)present:(id)sender;
--(IBAction)dismiss:(id)sender;
-
 @end

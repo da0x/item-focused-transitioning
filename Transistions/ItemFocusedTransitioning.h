@@ -18,3 +18,7 @@
 
 @interface ItemFocusedAnimationController : NSObject<UIViewControllerAnimatedTransitioning>
 @end
+
+
+@interface ItemFocusedDismissAnimationController : ItemFocusedAnimationController
+@end

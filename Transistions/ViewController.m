@@ -10,10 +10,14 @@
 #import "ItemFocusedTransitioning.h"
 
 @interface ViewController ()
-@property ItemFocusedTransitioning* customTransitioning;
 
 #pragma mark Item Focused Transitioning
 @property IBOutlet UIImageView* viewForItemFocusedTransitioning;
+
+@property IBOutlet UIImageView* keyItem1;
+@property IBOutlet UIImageView* keyItem2;
+
+@property ItemFocusedTransitioning* transitioning;
 @end
 
 
@@ -24,21 +28,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if( [segue.identifier isEqualToString:@"item1"] )
+        self.viewForItemFocusedTransitioning = self.keyItem1;
     
-    self.customTransitioning = [[ItemFocusedTransitioning alloc] init];
-    self.transitioningDelegate = self.customTransitioning;
+    if( [segue.identifier isEqualToString:@"item2"] )
+        self.viewForItemFocusedTransitioning = self.keyItem2;
 }
 
--(IBAction)present:(id)sender
+- (IBAction)unwindToMainMenu:(UIStoryboardSegue*)sender
 {
-    UIViewController* viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"vc1"];
-    viewController.transitioningDelegate = self.customTransitioning;
-    [self presentViewController:viewController animated:true completion:nil];
-}
-
--(IBAction)dismiss:(id)sender
-{
-    self.presentingViewController.transitioningDelegate = self.customTransitioning;
+    self.presentingViewController.transitioningDelegate = self.transitioning = [[ItemFocusedTransitioning alloc] init];
     [self.presentingViewController dismissViewControllerAnimated:true completion:nil];
 }
 

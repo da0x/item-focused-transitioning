@@ -22,8 +22,9 @@
 		4F095D03188981A0007C7331 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F095CE2188981A0007C7331 /* UIKit.framework */; };
 		4F095D0B188981A0007C7331 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F095D09188981A0007C7331 /* InfoPlist.strings */; };
 		4F095D0D188981A0007C7331 /* TransistionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F095D0C188981A0007C7331 /* TransistionsTests.m */; };
-		4F095D18188985C0007C7331 /* ItemFocusedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F095D17188985C0007C7331 /* ItemFocusedTransitioning.m */; };
+		4F095D18188985C0007C7331 /* ItemFocusedTransitioning.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4F095D17188985C0007C7331 /* ItemFocusedTransitioning.mm */; };
 		4F095D1F188DB9D2007C7331 /* landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F095D1E188DB9D2007C7331 /* landscape.png */; };
+		4F095D23188EC9F8007C7331 /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F095D22188EC9F8007C7331 /* CustomSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +59,10 @@
 		4F095D0A188981A0007C7331 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4F095D0C188981A0007C7331 /* TransistionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransistionsTests.m; sourceTree = "<group>"; };
 		4F095D16188985C0007C7331 /* ItemFocusedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemFocusedTransitioning.h; sourceTree = "<group>"; };
-		4F095D17188985C0007C7331 /* ItemFocusedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemFocusedTransitioning.m; sourceTree = "<group>"; };
+		4F095D17188985C0007C7331 /* ItemFocusedTransitioning.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ItemFocusedTransitioning.mm; sourceTree = "<group>"; };
 		4F095D1E188DB9D2007C7331 /* landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = landscape.png; path = Images/landscape.png; sourceTree = "<group>"; };
+		4F095D21188EC9F8007C7331 /* CustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegue.h; sourceTree = "<group>"; };
+		4F095D22188EC9F8007C7331 /* CustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,17 +122,19 @@
 		4F095CE4188981A0007C7331 /* Transistions */ = {
 			isa = PBXGroup;
 			children = (
-				4F095D1D188DB9C8007C7331 /* Images */,
 				4F095CED188981A0007C7331 /* AppDelegate.h */,
 				4F095CEE188981A0007C7331 /* AppDelegate.m */,
-				4F095CF0188981A0007C7331 /* Main_iPhone.storyboard */,
+				4F095D21188EC9F8007C7331 /* CustomSegue.h */,
+				4F095D22188EC9F8007C7331 /* CustomSegue.m */,
+				4F095D16188985C0007C7331 /* ItemFocusedTransitioning.h */,
+				4F095D17188985C0007C7331 /* ItemFocusedTransitioning.mm */,
 				4F095CF3188981A0007C7331 /* Main_iPad.storyboard */,
+				4F095CF0188981A0007C7331 /* Main_iPhone.storyboard */,
 				4F095CF6188981A0007C7331 /* ViewController.h */,
 				4F095CF7188981A0007C7331 /* ViewController.m */,
 				4F095CF9188981A0007C7331 /* Images.xcassets */,
+				4F095D1D188DB9C8007C7331 /* Images */,
 				4F095CE5188981A0007C7331 /* Supporting Files */,
-				4F095D16188985C0007C7331 /* ItemFocusedTransitioning.h */,
-				4F095D17188985C0007C7331 /* ItemFocusedTransitioning.m */,
 			);
 			path = Transistions;
 			sourceTree = "<group>";
@@ -273,7 +278,8 @@
 				4F095CF8188981A0007C7331 /* ViewController.m in Sources */,
 				4F095CEF188981A0007C7331 /* AppDelegate.m in Sources */,
 				4F095CEB188981A0007C7331 /* main.mm in Sources */,
-				4F095D18188985C0007C7331 /* ItemFocusedTransitioning.m in Sources */,
+				4F095D18188985C0007C7331 /* ItemFocusedTransitioning.mm in Sources */,
+				4F095D23188EC9F8007C7331 /* CustomSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

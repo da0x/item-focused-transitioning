@@ -4,47 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
-            <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
-                    <button key="view" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eoc-0F-amG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <state key="normal" title="Button">
-                            <color key="titleColor" red="0.76862745099999996" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                        </state>
-                        <connections>
-                            <segue destination="Ssz-Dg-tA2" kind="push" id="EbQ-md-bb6"/>
-                        </connections>
-                    </button>
-                    <navigationItem key="navigationItem" id="Ybo-K2-Hy8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="846" y="347"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="jGv-IY-5cT">
-            <objects>
-                <viewController id="Ssz-Dg-tA2" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Zww-Lm-Qrm"/>
-                        <viewControllerLayoutGuide type="bottom" id="DRo-Sf-EsV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Y5f-XF-LWp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="1" blue="0.50309728769999995" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="vCu-ft-B20"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tNe-hY-Zqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1301" y="347"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="BAx-OK-xFi">
             <objects>
@@ -56,14 +15,114 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="ad6-ZN-3oa"/>
+                        <segue destination="EI1-dK-FN9" kind="relationship" relationship="rootViewController" id="SGC-Da-L15"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P5f-yU-E1y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="312" y="806"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="cmV-Uq-76G">
+            <objects>
+                <viewController id="EI1-dK-FN9" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zmZ-BO-UvK"/>
+                        <viewControllerLayoutGuide type="bottom" id="cJ8-if-emR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Qq-Qf-PHj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Landscape" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyn-E9-iGr">
+                                <rect key="frame" x="115" y="-61" width="129" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" text="Landscape comprises the visible features of an area of land, including the physical elements of landforms such as (ice-capped)" translatesAutoresizingMaskIntoConstraints="NO" id="G2I-qh-37g">
+                                <rect key="frame" x="169" y="233" width="125" height="175"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFL-dc-X21">
+                                <rect key="frame" x="45" y="337" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Learn more">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eOL-bP-ASX" kind="custom" customClass="CustomSegue" id="mNn-nu-9Dy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="landscape.png" translatesAutoresizingMaskIntoConstraints="NO" id="tl5-ON-rSl">
+                                <rect key="frame" x="26" y="244" width="117" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cnE-GF-A8f"/>
+                    <connections>
+                        <outlet property="viewForItemFocusedTransitioning" destination="tl5-ON-rSl" id="MBJ-0v-VYT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AhT-2X-55R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="738" y="806"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KdA-vZ-qD6">
+            <objects>
+                <viewController id="eOL-bP-ASX" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UrZ-YZ-TzY"/>
+                        <viewControllerLayoutGuide type="bottom" id="fas-2X-q1F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aGu-kk-tgS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="landscape.png" translatesAutoresizingMaskIntoConstraints="NO" id="nGi-oE-LNB">
+                                <rect key="frame" x="0.0" y="67" width="320" height="201"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qix-TS-pgD">
+                                <rect key="frame" x="20" y="328" width="280" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Landscape comprises the visible features of an area of land, including the physical elements of landforms such as (ice-capped) mountains, hills, water bodies such as rivers, lakes, ponds and the sea, living elements of land cover including indigenous vegetation, human elements including different forms of land use, buildings and structures, and transitory elements such as lighting and weather conditions.
+Combining both their physical origins and the cultural overlay of human presence, often created over millennia, landscapes reflect the living synthesis of people and place vital to local and national identity. Landscapes, their character and quality, help define the self-image of a region, its sense of place that differentiates it from other regions. It is the dynamic backdrop to people’s lives.
+The Earth has a vast range of landscapes including the icy landscapes of polar regions, mountainous landscapes, vast arid desert landscapes, islands and coastal landscapes, densely forested or wooded landscapes including past boreal forests and tropical rainforests, and agricultural landscapes of temperate and tropical regions.
+Landscape may be further reviewed under the following specific categories: landscape art, cultural landscape, landscape ecology, landscape planning, landscape assessment and landscape design. The activity that modifies the visible features of an area of land is named Landscaping.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Landscape" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyF-Ua-bkw">
+                                <rect key="frame" x="23" y="290" width="129" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewForItemFocusedTransitioning" destination="nGi-oE-LNB" id="wLj-gB-L4G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bTU-P8-eBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1166" y="806"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="landscape.png" width="1280" height="1024"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
